@@ -1,0 +1,16 @@
+<h1>All Tasks</h1>
+
+<h2>Tarefas</h2>
+
+<ul>
+  <li *ngFor="let tarefa of tarefas">
+    <input type="checkbox" [(ngModel)]="tarefa.concluido">
+    {{tarefa.descricao}}
+    <button (click)="excluirTarefa(tarefa)">Excluir</button>
+  </li>
+</ul>
+
+<form (submit)="adicionarTarefa(descricao.value)">
+  <input type="text" #descricao>
+  <button type="submit">Adicionar Tarefa</button>
+</form>

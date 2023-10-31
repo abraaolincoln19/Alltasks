@@ -1,0 +1,14 @@
+h1 {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+li {
+    margin-bottom: 10px;
+  }
+  
+  button {
+    margin-left: 10px;
+  }
